@@ -11,9 +11,7 @@ def tearDownModule():
 
 
 class test_CSVPrinter_with_right_file(unittest.TestCase):
-
     printer: CSVPrinter
-
 
     @classmethod
     def setUpClass(cls):
@@ -40,7 +38,6 @@ class test_CSVPrinter_with_right_file(unittest.TestCase):
 
 
 class test_CSVPrinter_with_wrong_file(unittest.TestCase):
-
     printer: CSVPrinter
 
     @classmethod
@@ -57,7 +54,6 @@ class test_CSVPrinter_with_wrong_file(unittest.TestCase):
 
     def tearDown(self):
         print('Running CSVPrinter_with_wrong_file tearDown')
-
 
     def test_file_exist(self):
         self.assertRaises(Exception, self.printer.read)
